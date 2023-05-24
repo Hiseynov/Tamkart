@@ -1,0 +1,61 @@
+{
+    "Taksit kartlar": [
+      {
+        "id": 1,
+        "name": "TamKart",
+        "kreditLimit":[
+          "Kredit limiti",
+          "300 - 15 000 AZN"
+        ],
+        "faiz":["Faiz","24%"],
+        "qiymet":["Qiymət","0 Azn"],
+        "muddet":["Müddət","5 ilədək"],
+        "img":[
+            "https://tamkart.az/assets/uploads/cards/e46a8d7535af84b05aeb6c59aeba5f87.png",
+            "https://tamkart.az/assets/uploads/cards/c7db97e0db40636d7e9fcc974ffce2cd.png",
+            "https://tamkart.az/assets/uploads/cards/4ebb1558318a21432558486eb29ef7d6.png"
+        ],
+        "Kart haqqında":[
+          "Kart haqqında",
+          "Çox funksiyalı TamKart-ın ön tərəfi kredit, arxa tərəfi isə debet kartıdır"
+      ],
+      "Kredit kart üzrə funksionallıq":"Kredit kart üzrə funksionallıq",
+      "Üstünlüklər":[
+        "Üstünlüklər",
+        "24 ayadək taksit imkanı",
+        "ABB-nin POS-terminalları və elektron ticarət sistemi ilə birdəfəlik ödəniş zamanı minimum 2% keşbək, digər bankların POS-terminalları və elektron ticarət sistemi ilə birdəfəlik ödəniş zamanı 1% keşbək.*",
+        "QayğıCash klubuna üzvlük",
+        "* Taksit əməliyyatları, kommunal ödənişlər, mobil operator ödənişləri, vergi/gömrük, dövlət və sığorta ödənişləri, maliyyə institutlarına ödənişlər, kredit ödənişləri, KartTransfer, Unique cash, Quasi cash ödənişləri zamanı kəşbək hesablanmır. Eyni kartla ay ərzində qazanılan maksimal keşbək məbləği 300 AZN-dir.",
+        "Hər ödənişdə minimum 1% keşbək*",
+        "QayğıCash klubuna üzvlük",
+        "Nağd kredit əldə etmək imkanı",
+        "ABB mobile-da qeydiyyatdan keçən kartdakı qalığa illik 7% hesablanıb ayın sonunda kart hesabına köçürülür.**",
+        "* Kommunal ödənişlər, mobil operator ödənişləri, vergi/gömrük, dövlət və sığorta ödənişləri, maliyyə institutlarına ödənişlər, kredit ödənişləri, KartTransfer, Unique cash, Quasi cash ödənişləri zamanı kəşbək hesablanmır. Eyni kartla ay ərzində qazanılan maksimal keşbək məbləği 300 AZN-dir.",
+        "** Qalığa faiz kartdakı vəsaitin minimum 200 AZN-dən maksimum 2 500 AZN-dək hissəsinə və yalnız AZN valyutalı kartlarda hesablanır."
+
+      ],
+      "Tariflər":[
+        "Tariflər",
+        "SMS xəbərdarlıq- Pulsuz",
+        "Nağdlaşdırma limiti - 50%",
+        "ABB ATM-lərində nağdlaşdırma – 1.5% (min. 2 AZN)",
+        "6012, 6050 və 6051 MCC kodlarla (Kredit ödənişləri, Maliyyə təşkilatlarına ödənişlər) əməliyyatların aparılması üzrə xidmət haqqı – 1.5% min. 2 AZN",
+        "Tarif cədvəli",
+        "SMS xəbərdarlıq - Pulsuz",
+        "Ölkədaxili bütün ATM-lərdə nağdlaşdırma (debet tərəfi) və kartlararası köçürmələrə görə birlikdə – Aylıq 7 000 AZN-dək pulsuz, 7 000 AZN-dən yuxarı 1% (min. 1 AZN və ya ekv.)"
+      ],
+      "Güzəşt müddəti":[
+        "Güzəşt müddəti",
+        "minimum 30 gün olmaqla 60 günədək"
+      ],
+      "Kredit xətti üzrə limitin müddəti":[
+        "Kredit xətti üzrə limitin müddəti",
+        "36 ay"
+      ],
+      "Debet kart üzrə funksionallıq":"Debet kart üzrə funksionallıq"
+
+       
+      }
+
+    ]
+  }
