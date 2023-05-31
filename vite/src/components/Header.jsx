@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-function Header({def}) {
+function Header() {
   const page = ["Kartlar", "Kampaniyalar", "Partnyorlar", "Əlaqə"];
   return (
     <>
       <header id="header">
-        <nav className="nav">
+        <nav className="nav" style={{borderRadius:window.location.pathname.split("/").length===3?'':'0px 0px 20px 20px'}} >
           <div className="logo">
             <Link to={"/"}>tam.</Link>
           </div>
@@ -30,10 +29,6 @@ function Header({def}) {
             </a>
           </div>
         </nav>
-       {/* <div className="swiper-container">
-        {def}
-
-       </div> */}
       </header>
       
     </>

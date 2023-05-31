@@ -5,7 +5,7 @@ import Kartlar from "./pages/Kartlar";
 import Partnyorlar from "./pages/Partnyorlar";
 import Əlagə from "./pages/Əlagə";
 import CardsId from './pages/CardsId'
-
+import TamGenc from './pages/TamGenc'
 
 export const routes = [
     {
@@ -33,7 +33,11 @@ export const routes = [
         element:<Faq></Faq>
     },
     {
-         path: "Kartlar/:id",
+         path: "Kartlar/:name",
          element:<CardsId></CardsId>
-    } 
+    },
+    {
+        path: "TamGenc",
+        element:<TamGenc></TamGenc>
+   },
 ]

@@ -5,10 +5,21 @@ import { dataKart } from "../../data/data";
 function CardsId() {
   const id = window.location.pathname.split("/")[2];
   const [dataK, setDataK] = useState(dataKart[id - 1]);
+  const [whiteAct,setWhiteAct]=useState('')
+
+   window.onscroll = function() {
+    var scrolled = window.pageYOffset;
+    if (scrolled<=420) {
+      setWhiteAct('Ümumi məlumat')
+    }else{
+      setWhiteAct('Kart haqqında')
+    }
+};
+
 
   return (
     <>
-      <div className="container">
+       <div className="container" style={{borderRadius:"0px"}}>
         <div className="cards-header">
           <div className="cards-header-word">
             <h1>{dataK.name}</h1>
@@ -18,9 +29,19 @@ function CardsId() {
           </div>
         </div>
       </div>
+      <div className="page-cards-nav">
+        <div className="page-cards-container">
+          <ul>
+            <li><a href="#Ümumi-məlumat" className={whiteAct==='Ümumi məlumat'?'whiteActive':''} onClick={()=>{setWhiteAct('Ümumi məlumat')}}>Ümumi məlumat</a></li>
+            <li><a href="#Kart haqqında" className={whiteAct==='Kart haqqında'?'whiteActive':''} onClick={()=>{setWhiteAct('Kart haqqında')}}>Kart haqqında</a></li>
+          </ul>
+        </div>
+      </div>
+    {/* </div> */}
+     
       <div id="main-cards">
-        <div className="cards-container">
-          <div className="cards-top">
+        <div  className="cards-container">
+          <div id="Ümumi-məlumat" className="cards-top">
             <ul>
               <li>
                 <b>{dataK.kreditLimit[0]}</b>
@@ -38,10 +59,11 @@ function CardsId() {
                 <b>{dataK.muddet[0]}</b>
                 <span>{dataK.muddet[1]}</span>
               </li>
+            
             </ul>
           </div>
 
-          <div className="cards-button">
+          <div id="Kart haqqında" className="cards-button">
             <h1>{dataK.Karthaqqında[0]}</h1>
             <div className="cards-items">
               <div className="cards-ustunluk-top">
@@ -74,18 +96,15 @@ function CardsId() {
                   <h3>{dataK.ÜstünlüklərY[0]}</h3>
                 </div>
                 <div className="cards-ustunluk-right">
-                  <p>{dataK.ÜstünlüklərY[1]}</p>
-                  <p>{dataK.ÜstünlüklərY[2]}</p>
-                  <p>{dataK.ÜstünlüklərY[3]}</p>
-                  <p>{dataK.ÜstünlüklərY[4]}</p>
-                  {/* <p>{dataK.ÜstünlüklərY[5]}</p> */}
-                  {/* <p>{dataK.ÜstünlüklərY[6]}</p> */}
+                  {dataK.ÜstünlüklərY.map((e,i)=>(
+                     <p key={i}>{e}</p>
+                  ))}
                 </div>
               </div>
               <div className="cards-ustunluk-button">
-                <p>{dataK.ÜstünlüklərA[0]}</p>
-                <p>{dataK.ÜstünlüklərA[1]}</p>
-                <p>{dataK.ÜstünlüklərA[2]}</p>
+                {dataK.ÜstünlüklərA.map((e,i)=>(
+                  <p key={i}>{e}</p>
+                ))}
               </div>
             </div>
             <div className="cards-item">
@@ -93,18 +112,15 @@ function CardsId() {
                 <h3>{dataK.Tariflər[0]}</h3>
               </div>
               <div className="cards-right">
-                <p>{dataK.Tariflər[1]}</p>
-                <p>{dataK.Tariflər[2]}</p>
-                <p>{dataK.Tariflər[3]}</p>
-                <p>{dataK.Tariflər[4]}</p>
+                {dataK.Tariflər.map((e,i)=>(
+                  <p key={i}>{e}</p>
+                ))}
                 <a href={dataK.TarifLink}>{dataK.TariflərCedvel[0]}</a>
               </div>
             </div>
             {dataK.type == "Debet kartlar" ? (
-              //  console.log('salam' )
               ""
             ) : (
-              // console.log('got')
               <>
                 <div className="cards-item">
                   <div className="cards-left green">
@@ -139,18 +155,15 @@ function CardsId() {
                       <h3>{dataK.ÜstünlüklərY2[0]}</h3>
                     </div>
                     <div className="cards-ustunluk-right">
-                      <p>{dataK.ÜstünlüklərY2[1]}</p>
-                      <p>{dataK.ÜstünlüklərY2[2]}</p>
-                      <p>{dataK.ÜstünlüklərY2[3]}</p>
-                      <p>{dataK.ÜstünlüklərY2[4]}</p>
-                      <p>{dataK.ÜstünlüklərY2[5]}</p>
-                      <p>{dataK.ÜstünlüklərY2[6]}</p>
+                      {dataK.ÜstünlüklərY2.map((e,i)=>{
+                         <p key={i}>{e}</p>
+                      })}
                     </div>
                   </div>
                   <div className="cards-ustunluk-button">
-                    <p>{dataK.ÜstünlüklərA2[0]}</p>
-                    <p>{dataK.ÜstünlüklərA2[1]}</p>
-                    <p>{dataK.ÜstünlüklərA2[2]}</p>
+                    {dataK.ÜstünlüklərA2.map((e,i)=>(
+                      <p key={i}>{e}</p>
+                    ))}
                   </div>
                 </div>
                 <div className="cards-item">
@@ -158,10 +171,9 @@ function CardsId() {
                     <h3>{dataK.Tariflər2[0]}</h3>
                   </div>
                   <div className="cards-right">
-                    <p>{dataK.Tariflər2[1]}</p>
-                    <p>{dataK.Tariflər2[2]}</p>
-                    <p>{dataK.Tariflər2[3]}</p>
-                    <p>{dataK.Tariflər2[4]}</p>
+                    {dataK.Tariflər2.map((e,i)=>(
+                      <p key={i}>{e}</p>
+                    ))}
                     <a href={dataK.TarifLink}>{dataK.TariflərCedvel2[0]}</a>
                   </div>
                 </div>

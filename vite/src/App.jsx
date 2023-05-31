@@ -7,11 +7,17 @@ import { routes } from './routes'
 function App() {
 
 const router = useRoutes(routes)
+// function borderRadius() {
+//   window.location.pathname.includes(Kartlar/id)?
+// }
   return (
     <>
-    <Header></Header>
+    <div className="all-main">
+       <Header></Header>
     {router}
     <Footer></Footer>
+    </div>
+   
     </>
   )
 }
