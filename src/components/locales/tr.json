@@ -1,0 +1,159 @@
+{
+    "welcome": "Websiteme hoş geldiniz!",
+    "buttonText": "Bana tıkla",
+    "dataFaq": [
+      {
+        "sual": "TamKart ?",
+        "cavab": "TamKart ABB-nin təqdim etdiyi, 2 fərqli hesabı bir kartda idarəetmə imkanını təqdim edən çox funksiyalı kartdır."
+      },
+      {
+        "sual": "TamKart üzrə keşbək nə qədərdir?",
+        "cavab": "TamKart-ın kredit tərəfi üzrə ABB-nin POS-terminalları və elektron ticarət sistemi ilə birdəfəlik ödəniş zamanı keşbək minimum 2%, digər bankların POS-terminalları və elektron ticarət sistemi ilə birdəfəlik ödəniş zamanı keşbək 1%; debet tərəfi üzrə keşbək minimum 2% təyin edilmişdir. Bundan başqa, QayğıCash klubu üzrə partnyor mağazalarda ödəniş zamanı təqdim olunan keşbək faizi3 %-dən çox olduqda QayğıCash klubunun faizi müştəriyə qayıdır. Bankın partnyor şirkətləri tərəfindən təqdim olunan cashback faizi ",
+        "abbb": "abb-bank.az",
+        "cavab2": " saytında ",
+        "Qaygi": "QayğıCash bölməsində",
+        "cavab3": " əks etdirilib."
+      },
+      {
+        "sual": "Keşbək məbləği nə zaman karta mədaxil olunur?",
+        "cavab": "Bank tərəfindən təqdim olunan cashback məbləğləri ayın sonuncu iş günü cəmlənərək müştərinin kartına mədaxil olunur. QayğıCash klubu üzrə partnyor mağazalarda ödəniş zamanı təqdim olunan cashback isə əməliyyat anında hesablanaraq karta mədaxil olunur."
+      },
+      {
+        "sual": "TamKart harada keçərlidir?",
+        "cavab": "Dünyanın hər yerində POS-terminallarla ödəmə edə, onlayn ödənişlər həyata keçirə və ya bankomatlardan nağd pul çıxara bilərsiniz."
+      },
+      {
+        "sual": "TamKart kredit limiti məbləğinin neçə faizini nağdlaşdıra bilərəm?",
+        "cavab": "Kredit limitinə kartın növündən asılı olaraq nağd məqsədlər üçün (ATM nağdlaşdırma, C2C, cash by code, kredit ödənişləri və s.) aylıq istifadə limitləri tətbiq edilmişdir. Limit hər ayın 1-i yenilənir."
+      },
+      {
+        "sual": "TamKart-ın növləri üzrə tətbiq olunan nağd məqsədlər üçün limitlər nə qədərdir?",
+        "cavab": "TamKart Classic/Standard kartında - 50%, TamKart Visa/MasterCard Gold kartında - 60%, TamKart Platinum kartında 80% miqdarında kredit limitindən nağd məqsədlər üçün istifadəyə aylıq limit tətbiq edilmişdir. TamKart Premium kartlarında isə heç bir məhdudiyyət tətbiq edilməmişdir."
+      },
+      {
+        "sual": "TamKart-ın kredit xəttindən taksit və ya nağdsız ödənişlərdə hər hansı məhdudiyyət varmı?",
+        "cavab": "Xeyr, TamKart-ın kredit xəttindən taksit və nağdsız ödənişlərdə heç bir məhdudiyyət yoxdur."
+      },
+      {
+        "sual": "TamKart vasitəsilə digər bankda olan krediti ödəmək mümkündürmü?",
+        "cavab": "Bəli, lakin TamKart Kredit vasitəsilə ödəniş zamanı bu halda 1.5% min. 2 AZN xidmət haqqı tutulacaqdır. TamKart Debet vasitəsilə ödənişlər zamanı əlavə xidmət haqqı tələb olunmur."
+      },
+      {
+        "sual": "Mənim üçün TamKart kredit limiti necə təyin ediləcək?",
+        "cavab": "TamKart üçün müraciət etdikdə kredit üzrə mütəxəssis Sizin aylıq gəlirlərinizi və xərclərinizi dəqiqləşdirəcəkdir. İlkin təhlil aparıldıqdan sonra Sizə limit haqqında məlumat veriləcəkdir. Limit Sizin gəlir və borclanma limitinizdən asılı olaraq300 manatdan 15000 manatadək təyin edilə bilər."
+      },
+      {
+        "sual": "TamKart-ı kimlər əldə edə bilər?",
+        "cavab": "ABB-nin kartları ilə əmək haqqı və ya təqaüd alan hər kəs və digər bankın emissiya etdiyi kartlar vasitəsilə əmək haqqı alan şəxslər (Dövlət büdcəsindən maliyyələşdirilən və ya təsərrüfat hesablı olan dövlət müəssisələrinin əməkdaşları, Neft-qaz sahəsində fəaliyyət göstərən müəssisələrin əməkdaşları) TamKart üçün müraciət edə bilər. Kartın verilməsi kredit üzrə mütəxəssisin ilkin təhlilinə əsasən təyin edilir."
+      },
+      {
+        "sual": "TamKart-ı necə almaq olar?",
+        "kreditAbb": "kredit.abb-bank.az",
+        "cavab": " saytından onlayn müraciət edərək və ya ABB-nin filiallarına yaxınlaşaraq əldə edə bilərsiniz. TamKart Debet kartlarını ",
+        "abb": "abb-bank.az",
+        "cavab2": " saytından onlayn sifariş edə bilərsiniz. "
+      },
+      {
+        "sual": "Başqa bankda kreditim varsa TamKart ala bilərəmmi?",
+        "cavab": "Bəli, lakin kredit üzrə mütəxəssis Sizin gəlirlərinizi və xərclərinizi təhlil etdikdən sonra paralel kredit ayrılıb-ayrılmayacağını dəqiqləşdirə bilər."
+      },
+      {
+        "sual": "TamKart-ın müddəti nə qədərdir?",
+        "cavab": "TamKart 60 ayadək müddətə rəsmiləşdirilir. TamKart-a açılacaq kredit xəttinin müddəti isə 3 6 ay təşkil edir."
+      },
+      {
+        "sual": "TamKart taksit necə hesablanır?",
+        "cavab": "TamKart-la partnyor mağazalarında istənilən məhsulu alıb, dəyərini hissə-hissə ödəmək mümkündür. Xərclənən məbləğ 3, 6, 12 ,18 və ya 24 aya bölünməklə, bərabər hissələrlə ödənilir."
+      },
+      {
+        "sual": "TamKart kredit xəttindən istifadə etdikdə borc necə hesablanır?",
+        "cavab": "Kredit xəttindən istifadə zamanı bərpa olunan borclara növbəti ayın 10-na kimi güzəşt müddəti tətbiq olunur və növbəti ayın 10-na kimi tam şəkildə ödənilməlidir. 20 AZN-dən yuxarı hər bir ölkədaxili və ölkəxarici bütün qeyri-taksit əməliyyatları zamanı minimum3  0 gün olmaqla 60 günədək güzəşt müddəti tətbiq olunur."
+      },
+      {
+        "sual": "Güzəşt müddətində borc ödənilməkdikdə nə baş verir?",
+        "cavab": "Kredit limitindən qeyri-taksit əməliyyatlarına istifadə olunan vəsaitlər güzəşt müddəti ərzində ödənilmədikdə borcu illik faiz dərəcəsinə uyğun olaraq 18 aya hissə-hissə ödəmək mümkündür. Güzəşt müddətində ödənilməyən borcun aylıq ödənişi güzəşt müddətindən sonrakı ayın 1-dən 10-dək ödənilir."
+      },
+      {
+        "sual": "Aylıq borclarımın məbləğini necə öyrənə bilərəm?",
+        "cavab": "TamKart haqqında məlumatı (borcunuz, alış- veriş etdiyiniz mağazalar, ödəməli olduğunuz məbləğlər, ödəniş qrafiki və s.) ",
+        "tamkart": "www.tamkart.az",
+        "cavab2": " saytının ",
+        "sexsi": "“Şəxsi kabinet”",
+        "cavab3": " bölümündən əldə edə biləcəksiniz. Bunun üçün şəxsiyyət vəsiqənizin PIN kodu, kartın son 4 rəqəmini və mobil nömrəni daxil etməlisiniz. Daha sonra təsdiq üçün qeydiyyatdan keçən mobil nömrənizə gələn birdəfəlik şifrəni daxil edirsiniz."
+      },
+      {
+        "sual": "TamKart-da olan borcumu necə ödəyim?",
+        "def": "TamKart-da olan borcunuzu aşağıdakı ödəniş üsullarından istifadə etməklə ödəyə bilərsiniz:",
+        "Abbmobile": "ABB mobile",
+        "yazi": " tətbiqi vasitəsilə kartdan karta köçürmə etməklə;",
+        "tamkart": "www.tamkart.az",
+        "yazi2": " və ",
+        "abb": "www.abb-bank.az",
+        "yaz3": " saytı vasitəsilə; ",
+        "yazi4": "eManat və ya Filial və şöbələrimizdə yerləşən",
+        "odenis": "ödəniş terminallarında;",
+        "yazi5": "ABB-nin",
+        "filial": "filial",
+        "yazi6": " və ",
+        "sobeler": "şöbələrində"
+      },
+      {
+        "sual": "Aylıq ödənişimi nə zaman ödəməliyəm?",
+        "cavab": "Aylıq ödəniş hər ayın 1-dən 10-dək ödənilməlidir."
+      },
+      {
+        "sual": "TamKart-da borcu vaxtında ödəməsəm nə baş verir?",
+        "cavab": "Bu halda kredit kartınız bloklaşdırıla bilər. TamKart üzrə gecikmələriniz olarsa, Sizin kredit tarixçənizdə gecikmələr qeydə alınır və gecikdirilən məbləğə cərimə hesablanır."
+      },
+      {
+        "sual": "TamKart kredit limitimi artıra və ya azalda bilərəmmi?",
+        "cavab": "TamKart limitinin azaldılması və artırılması üçün Banka müraciət etmək lazımdır. TamKart limitinin artırılması kartın istifadəsinə görə mümkün ola bilər. Bunun üçün bir neçə ay istifadə edib, vaxtında ödəniş etməlisiniz."
+      },
+      {
+        "sual": "TamKart-da ödəniş vaxtı qeyri-iş gününə düşübsə, ödənişi nə zaman etməliyəm?",
+        "cavab": "Ödəniş qeyri-iş gününə düşübsə, ödəniş etsəniz növbəti iş günü ilə hesabınıza keçəcək. Ona görə qeyri-iş gününə düşən ödənişləri 1 gün əvvəl iş günü, iş saatları ərzində etməyiniz tövsiyə edilir."
+      },
+      {
+        "sual": "Lounge Key nədir?",
+        "cavab": "Lounge Key dünyanın hər yerində olan hava limanlarının 850-dən artıq lounge zallarına asan və rahat giriş imkanını yaradan beynəlxalq proqramdır. Sakit və rahat “Lounge Key” zalında qəlyanaltı etmək, dincəlmək və ya işləmək, telefondan, internetdən istifadə etmək və s. mümkündür."
+      },
+      {
+        "sual": " TamKart-ın hansı növləri üzrə pulsuz ",
+        "cavab": "TamKart VISA Platinum kartında – illik 2 pulsuz keçid, TamKart VISA Premium kartında – illik 6 pulsuz keçid mövcuddur (Kartın istifadə müddətinə uyğun olaraq)."
+      },
+      {
+        "sual": "Lounge Key proqramına necə qoşulmaq olar?",
+        "cavab": "Bunun üçün TamKart Platinum və ya Premium kart sahibləri “Lounge Key” proqramının ",
+        "internet": "İnternet saytından",
+        "cavab2": " (və ya mobil əlavəsindən) şəxsi “Lounge Key” profili yaratmalıdır."
+      },
+      {
+        "sual": "Lounge Key proqramı haqqında məlumatları (lobbi zonasının mövcudluğu,  xidmətlər, şərtlər, iş saatları və s.) necə əldə etmək olar?",
+        "cavab": " və ya mobil əlavəsindən, Lounge Key Çağrı Mərkəzindən.",
+        "lounge": "Lounge Key saytından"
+      },
+      {
+        "sual": "Kredit və ya debet kartından ödəniş etmək üçün necə seçilməlidir?",
+        "cavab": "TamKart-lar ATM və POS terminallara daxil edildikdə 2 seçim yaranır: TamKart DEBET və TamKart KREDİT. Müştəri əməliyyatı hansı kartla etmək istəyirsə onu seçməlidir."
+      },
+      {
+        "sual": "Təmassız ödənişlər zamanı ödəniş kartın hansı hissəsi ilə həyata keçir?",
+        "cavab": "Əsas kart kredit kartı olduğundan təmassız ödənişlər zamanı avtomatik olaraq TamKart KREDİT kartından ödəniş keçəcəkdir."
+      },
+      {
+        "sual": "Taksit əməliyyatları zamanı əlavə komissiya tutulurmu?",
+        "cavab": "Müştərilər partnyor ticarət müəssisələrin əksəriyyətində taksit əməliyyatlarını əlavə faizsiz və komissiyasız həyata keçirə bilər. ",
+        "partnyor": "Partnyorlar bölməsində",
+        "cavab2": " taksit əməliyyatları zamanı partnyorlar üzrə ödənişin komissiyasız və ya komissiyalı olmağı barədə məlumat göstərilmişdir."
+      },
+      {
+        "sual": "Bərpa olunan borclar dedikdə nə başa düşülür?",
+        "cavab": "Kredit xətti vasitəsilə istifadə olunmuş 20 AZN-dən aşağı qeyri taksit əməliyyatları."
+      },
+      {
+        "sual": " Bankda pul kreditim varsa, TamKart ala bilərəm?",
+        "cavab": "Bəli, lakin kredit üzrə mütəxəssis Sizin gəlirlərinizi və xərclərinizi təhlil etdikdən sonra pul krediti ilə paralel kredit ayrılıb-ayrılmayacağını dəqiqləşdirə bilər."
+      }
+    ]
+  }
+  
