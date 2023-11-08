@@ -17,10 +17,12 @@ function Partnyorlar() {
   var filtervalue = PartnyorData.filter((data) => {
     if(openFilter){
       location.reload
-       return localStorage.getItem('kategoriya') === All ?setOpenFilter(!openFilter) && localStorage.setItem('kategoriya',''):data.logo.includes(localStorage.getItem('kategoriya'))
+       return localStorage.getItem('kategoriya') === All ?
+       setOpenFilter(!openFilter) && localStorage.setItem('kategoriya',''):data.logo.includes(localStorage.getItem('kategoriya'))
     }else{
       if(localStorage.getItem('kategoriya').length > 1){
-        return localStorage.getItem('kategoriya') === All?localStorage.setItem('kategoriya',''):data.logo.includes(localStorage.getItem('kategoriya'))
+        return localStorage.getItem('kategoriya') === All?
+        localStorage.setItem('kategoriya',''):data.logo.includes(localStorage.getItem('kategoriya'))
       }else{
         return data.name.toLocaleLowerCase().includes(value.toLocaleLowerCase()) ;
       }
@@ -72,7 +74,11 @@ function Partnyorlar() {
 
     const filterdata = async () => {
       try {
-       axios.get(localStorage.getItem('languages') ==="Aze"? `http://localhost:3300/filterCategori`:localStorage.getItem('languages')==="Ru"?'http://localhost:3301/filterCategori':"http://localhost:3302/filterCategori").then((e)=>{
+       axios.get(localStorage.getItem('languages') ==="Aze"?
+        `http://localhost:3300/filterCategori`:
+        localStorage.getItem('languages')==="Ru"?
+        'http://localhost:3301/filterCategori':
+        "http://localhost:3302/filterCategori").then((e)=>{
        setOptionFilter(e.data);
        })
       } catch (error) {
@@ -134,8 +140,12 @@ function Partnyorlar() {
                   <label >{yazilarFilter.Kateqoriya} : </label>
                      {/* <select name="" id=""> */}
                      <span>
-                          {optionFilter.map((item,i)=>(<p   className={localStorage.getItem('kategoriya')===item?'filterActive':""} onClick={()=>{setKategoriya(item),
-                          localStorage.setItem('kategoriya',item),setLast('3'),setOpenFilter(!openFilter)}} key={i}>{item}</p>))}
+                          {optionFilter.map((item,i)=>(
+                          <p className={localStorage.getItem('kategoriya')===item?'filterActive':""}
+                           onClick={()=>{setKategoriya(item),
+                          localStorage.setItem('kategoriya',item),
+                          setLast('3'),setOpenFilter(!openFilter)}}
+                           key={i}>{item}</p>))}
                      </span>
                   
                 </div>

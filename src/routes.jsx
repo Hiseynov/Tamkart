@@ -7,6 +7,7 @@ import Əlagə from "./pages/Əlagə";
 import CardsId from "./pages/CardsId";
 import LoginRegisrt from "./pages/LoginRegisrt";
 import TaksitImkani from "./pages/TaksitImkani";
+import Eror from "./pages/Eror";
 
 export const routes = [
   {
@@ -84,6 +85,10 @@ export const routes = [
       {
         path: "Cards/:id",
         element: <CardsId></CardsId>,
+      },
+      {
+        path:"*",
+        element:<Eror></Eror>
       }
   //    {
   //     path:"register",

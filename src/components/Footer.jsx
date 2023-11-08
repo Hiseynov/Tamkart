@@ -10,7 +10,7 @@ function Footer() {
   useEffect(() => {
     const filterYazilar = async () => {
       try {
-        axios.get(localStorage.getItem('languages')==="Aze"? `http://localhost:3300/yazilar`:localStorage.getItem('languages')==="ru"?` http://localhost:3301/yazilar`:" http://localhost:3302/yazilar").then((e) => {
+        axios.get(localStorage.getItem('languages')==="Aze"? `http://localhost:3300/yazilar`:localStorage.getItem('languages')==="Ru"?` http://localhost:3301/yazilar`:" http://localhost:3302/yazilar").then((e) => {
           setYazilarFilter(e.data);
         });
       } catch (error) {}
@@ -63,7 +63,7 @@ function Footer() {
               <li><Link to={'Partnyorlar'}>Partnyorlar</Link></li>
               <li><Link to={"Faq"}>FAQ</Link></li>
               <li><Link to={'Əlaqə'}>Bizimlə əlaqə</Link></li> */}
-              {(localStorage.getItem('languages')==="Aze"?(footeraze):localStorage.getItem('languages')==="ru"?(footerru):(footerangl)).map((item,id)=>(
+              {(localStorage.getItem('languages')==="Aze"?(footeraze):localStorage.getItem('languages')==="Ru"?(footerru):(footerangl)).map((item,id)=>(
                 <li key={id}>
                   <Link to={item} style={localStorage.getItem('darkLightMod')==='light'?({}):({color:"white"})} >
                      {item}

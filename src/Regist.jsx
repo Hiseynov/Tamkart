@@ -269,9 +269,9 @@ function Regist() {
                       onChange={(e) => countrychange(e.target.value)}
                       className="form-control"
                     >
-                      <option value="India">India</option>
-                      <option value="USA">USA</option>
-                      <option value="Singapore">Singapore</option>
+                      <option value="Aze">Aze</option>
+                      <option value="USA">Rus</option>
+                      <option value="Singapore">Angl</option>
                     </select>
                   </div>
                   <div className="form-group">

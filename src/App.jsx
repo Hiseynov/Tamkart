@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useRoutes } from "react-router-dom";
+import { Route, useRoutes } from "react-router-dom";
 import { useState } from "react";
 import Footer from "./components/Footer";
 // import './App.css'
@@ -15,6 +15,7 @@ import { ToastContainer } from "react-toastify";
 // import ChatBot from "react-simple-chatbot"
 // import {Segment} from 'semantic-ui-react'
 import ChatBot from 'react-simple-chatbot'; 
+// import Eror from "./pages/Eror";
 
 
 
@@ -130,9 +131,6 @@ const [chatAc,setChatAc] = useState(false)
   return (
     <>
       <div className="all-main"  style={localStorage.getItem("darkLightMod")==="light"?({background:""}):({background:"black"})} >
-        {/* <h1>{t('welcome')}</h1> */}
-        {/* <button>{t('buttonText')}</button>  */}
-        {/* <LanguageSwitcher /> */}
         <ToastContainer theme="colored"></ToastContainer>
         <Header></Header>
         <div className="chatbots-container">
@@ -145,73 +143,9 @@ const [chatAc,setChatAc] = useState(false)
         
       </div>
         {router}
-        {/* <Segment floated = 'right'>
-        <ChatBot steps={steps}></ChatBot>
-       </Segment> */}
         <Footer></Footer>
       </div>
-      {/* <form action="">
-        <h1>Registrasiya</h1>
-        {emailDirty && emailError && (
-          <div style={{ color: "red" }}>{emailError}</div>
-        )}
-        <input
-          onChange={(e) =>{ emailHandler(e),setAd({email:e.target.value,password:ad.password})}}
-          value={email}
-          onBlur={(e) => blurHandler(e)}
-          type="text"
-          name="email"
-          placeholder="enter your email"
-        />
-        {passworError && passwordDirty && (
-          <div style={{ color: "red" }}>{passworError}</div>
-        )}
-        <input
-          onChange={(e) => {passwordHandler(e),setAd({email:ad.email,password:e.target.value})}}
-          value={password}
-          onBlur={(e) => blurHandler(e)}
-          type="password"
-          name="password"
-          placeholder="enter your password"
-        />
-        <button disabled={!formValid} onClick={post} >registrasiya</button>
-      </form> */}
-      {/* <form action="" id="2">
-        <h1>Login</h1>
-        {emailDirty && emailError && (
-          <div style={{ color: "red" }}>{emailError}</div>
-        )}
-        <input
-          onChange={(e) =>{ emailHandler(e),setloginad({email:e.target.value,password:loginad.password})}}
-          value={email}
-          onBlur={(e) => blurHandler(e)}
-          type="text"
-          name="email"
-          placeholder="enter your email"
-        />
-        {passworError && passwordDirty && (
-          <div style={{ color: "red" }}>{passworError}</div>
-        )}
-        <input
-          onChange={(e) => {passwordHandler(e),setloginad({email:loginad.email,password:e.target.value})}}
-          value={password}
-          onBlur={(e) => blurHandler(e)}
-          type="password"
-          name="password"
-          placeholder="enter your password"
-        />
-        <button disabled={!formValid} onClick={loginpost} >login</button>
-      </form> */}
-
-      {/* <input onChange={(e)=>setAd({ad:e.target.value,email:ad.email,password:ad.password})} placeholder='ad'  type="text" />n
-    <input onChange={(e)=>setAd({ad:ad.ad,email:e.target.value,password:ad.password})} placeholder='email' type="email" />n
-    <input onChange={(e)=>setAd({ad:ad.ad,email:ad.email,password:e.target.value})} placeholder='password' type="password" />n
-    <button onClick={post}>gonder</button>
-    <br />
-    <input onChange={(e)=>setloginad({ad:e.target.value,email:loginad.email,password:loginad.password})} placeholder='ad'  type="text" />n
-    <input onChange={(e)=>setloginad({ad:loginad.ad,email:e.target.value,password:loginad.password})} type="email" placeholder='email' />
-    <input onChange={(e)=>setloginad({ad:loginad.ad,email:loginad.email,password:e.target.value})} type="password" placeholder='password'/>
-    <button onClick={loginpost}>yes</button> */}
+   
     </>
   );
 }

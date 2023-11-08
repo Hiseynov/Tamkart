@@ -4,21 +4,22 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import DarkLight from "./DarkLight";
+import Basketpop from "../components/Basketpop";
 function Header() {
   const page = ["Kartlar", "Kampaniyalar", "Partnyorlar", "Əlaqə"];
   const pageRu = ["Карты", "Акции", "Партнеры", "Контакты"]
   const pageAngl = ["Cards", "Campaigns", "Partners", "Contact"]
-
+const [YazilarFilter,setYazilarFilter]=useState([])
   const language = ["Aze","Ru","angl"]
   
   const [lang,setlang]=useState(localStorage.getItem('languages')||'Aze')
   const [ac , setac]= useState(false)
   // useEffect()
-  const [user,setuser] = useState(localStorage.getItem('user') || 'Şəxsi kabinet')
+  const [user,setuser] = useState(localStorage.getItem('user') || (localStorage.getItem('languages')==="Aze"?"Şəxsi kabinet":localStorage.getItem("languages")==="Ru"?"Личный кабинет":"Private cabinet"))
   // const b = localStorage.getItem('user');
   // console.log(JSON.parse(b));
   const [langac,setlangac] = useState(false)
-  const [YazilarFilter,setYazilarFilter]=useState([])
+  
   useEffect(()=>{
 
     const filterYazilar = async () => {
@@ -56,6 +57,8 @@ function Header() {
           </div> 
           {/* {localStorage.getItem("user")?(<h1 onClick={()=>(localStorage.removeItem('user'),location.reload())}>cixis</h1>):""} */}
           <DarkLight></DarkLight>
+          {/* <Basketpop></Basketpop> */}
+
         </nav>
         <nav className="nav" style={localStorage.getItem("darkLightMod")==="light"?({background:"linear-gradient(45deg, #76bc21, #8cc745)",borderRadius:window.location.pathname.split("/").length===3?'':'0px 0px 20px 20px'}):({background:"#132a13",borderRadius:window.location.pathname.split("/").length===3?'':'0px 0px 20px 20px'}) } >
           <div className="logo">
@@ -83,10 +86,10 @@ function Header() {
                 ac && (
                   <div className="kabinet-gizli" >
                     {localStorage.getItem('user')?(
-                      <p onClick={()=>(localStorage.removeItem('user'),location.reload())}> <strong><i className="fa-solid fa-right-from-bracket"></i></strong> cixis</p>
+                      <p style={{color:"red"}} onClick={()=>(localStorage.removeItem('user'),location.reload())}> <strong style={{color:"red"}}><i className="fa-solid fa-right-from-bracket"></i></strong> cixis</p>
                     ):(
-                      <p>
-                        <Link  to={'/Login-Registr'}><strong><i className="fa-solid fa-right-from-bracket"></i></strong> giris</Link></p>
+                      <p >
+                        <Link style={{color:"#80C132"}} to={'/Login-Registr'}><strong style={{color:"#80C132"}}><i className="fa-solid fa-right-from-bracket"></i></strong> giris</Link></p>
                     )}
                   </div>
                 )

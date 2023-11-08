@@ -45,7 +45,12 @@
     "Tamal": "Buy completely, pay in installments!",
     "TamKartlaseçilmiş": "With TamKart, you can pay for purchases in selected partner stores for up to 24 months without interest.",
     "Partnyorlarabax": "View partners",
-    "Sifarişet": "Order"
+    "Sifarişet": "Order",
+    "Ümumiməlumat": "General Information",
+    "Karthaqqında": "About the Card",
+    "Erormesage":"Page not found",
+    "Anasehife":"Return to home page",
+    "sebetekle":"Add to cart"
   },
   "filterCategori": [
     "All categories",

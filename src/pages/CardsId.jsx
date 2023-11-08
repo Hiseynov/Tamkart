@@ -2,14 +2,36 @@ import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function CardsId() {
   const [dataK, setDataK] = useState();
-  const [whiteAct,setWhiteAct]=useState('')
+  const [dataK2, setDataK2] = useState();
+  const [whiteAct,setWhiteAct]=useState('Ümumi məlumat')
   const {id} =useParams()
   // console.log(id)
+  const [yazilarFilter, setYazilarFilter] = useState([]);
+  const navigate = useNavigate();
+  console.log(id);
+  // function errors() {
+  //   if(+id >= 16 || typeof(+id) != Number ){
+  //     navigate("/*")
+  //   }else{
+  //     navigate('/Cards/:id')
+  //   }
+  // }
+  // errors()
+  useEffect(() => {
+    const filterYazilar = async () => {
+      try {
+        axios.get(localStorage.getItem('languages')==="Aze"? `http://localhost:3300/yazilar`:localStorage.getItem('languages')==="Ru"? ` http://localhost:3301/yazilar`:"http://localhost:3302/yazilar").then((e) => {
+          setYazilarFilter(e.data);
+        });
+      } catch (error) {}
+    };
 
+    filterYazilar();
+  }, []);
   useEffect(()=>{
 
     const fetchData = async () => {
@@ -19,6 +41,23 @@ function CardsId() {
 
          console.log(e.data)
          setDataK(e.data);
+       })
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    
+    fetchData();
+  },[])
+  useEffect(()=>{
+
+    const fetchData = async () => {
+      try {
+       axios.get(localStorage.getItem('languages') ==="Aze"?(`http://localhost:3300/dataKart/${id}`):localStorage.getItem('languages')==="Ru"?(`http://localhost:3301/dataKart/${id}`):(`http://localhost:3302/dataKart/${id}`)).then((e)=>{
+
+
+         console.log(e.data)
+         setDataK2(e.data);
        })
       } catch (error) {
         console.error(error);
@@ -58,8 +97,8 @@ function CardsId() {
       <div style={localStorage.getItem("darkLightMod")==="light"?({background:"linear-gradient(45deg, #76bc21, #8cc745)"}):({background:"#132A13"})} className="page-cards-nav">
         <div className="page-cards-container">
           <ul>
-            <li><a href="#Ümumi-məlumat" className={whiteAct==='Ümumi məlumat'?'whiteActive':''} onClick={()=>{setWhiteAct('Ümumi məlumat')}}>Ümumi məlumat</a></li>
-            <li><a href="#Kart haqqında" className={whiteAct==='Kart haqqında'?'whiteActive':''} onClick={()=>{setWhiteAct('Kart haqqında')}}>Kart haqqında</a></li>
+            <li><a href="#Ümumi-məlumat" className={whiteAct==='Ümumi məlumat'?'whiteActive':''} onClick={()=>{setWhiteAct('Ümumi məlumat')}}>{yazilarFilter.Ümumiməlumat} </a></li>
+            <li><a href="#Kart haqqında" className={whiteAct==='Kart haqqında'?'whiteActive':''} onClick={()=>{setWhiteAct('Kart haqqında')}}>{yazilarFilter.Karthaqqında}</a></li>
           </ul>
         </div>
       </div>
