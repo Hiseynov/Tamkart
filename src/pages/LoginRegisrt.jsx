@@ -60,7 +60,7 @@ function LoginRegisrt() {
               src={
                 localStorage.getItem("login") === "true"
                   ? "https://abb-bank.az/storage/uploads/ZjBjELZlTas9a51xk636LiZMimqUmVpFiFzXx4tr.png"
-                  : "https://www.bizimyol.info/az/wp-content/uploads/2021/07/TamKart-1.png"
+                  : "https://abb-bank.az/storage/uploads/files/1701236911_tunzala-xpert-sade-500x500.webp"
               }
               alt=""
             />

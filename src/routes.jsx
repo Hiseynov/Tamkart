@@ -42,6 +42,7 @@ export const routes = [
     path: "Login-Registr",
     element: <LoginRegisrt></LoginRegisrt>,
   },
+  // Ru
   {
     path: "Карты",
     element: <Kartlar></Kartlar>,
@@ -62,34 +63,35 @@ export const routes = [
     path: "Карты/:id",
     element: <CardsId></CardsId>,
   },
-  { 
+  // Angl
+  {
     path: "taksit",
-    element: <TaksitImkani></TaksitImkani> 
-    },
-    {
-        path: "Cards",
-        element: <Kartlar></Kartlar>,
-      },
-      {
-        path: "Campaigns",
-        element: <Kampaniyalar></Kampaniyalar>,
-      },
-      {
-        path: "Partners",
-        element: <Partnyorlar></Partnyorlar>,
-      },
-      {
-        path: "Contact",
-        element: <Əlagə></Əlagə>,
-      },
-      {
-        path: "Cards/:id",
-        element: <CardsId></CardsId>,
-      },
-      {
-        path:"*",
-        element:<Eror></Eror>
-      }
+    element: <TaksitImkani></TaksitImkani>,
+  },
+  {
+    path: "Cards",
+    element: <Kartlar></Kartlar>,
+  },
+  {
+    path: "Campaigns",
+    element: <Kampaniyalar></Kampaniyalar>,
+  },
+  {
+    path: "Partners",
+    element: <Partnyorlar></Partnyorlar>,
+  },
+  {
+    path: "Contact",
+    element: <Əlagə></Əlagə>,
+  },
+  {
+    path: "Cards/:id",
+    element: <CardsId></CardsId>,
+  },
+  {
+    path: "*",
+    element: <Eror></Eror>,
+  },
   //    {
   //     path:"register",
   //     element:<Regist></Regist>

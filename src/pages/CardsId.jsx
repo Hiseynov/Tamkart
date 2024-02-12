@@ -49,23 +49,7 @@ function CardsId() {
     
     fetchData();
   },[])
-  useEffect(()=>{
 
-    const fetchData = async () => {
-      try {
-       axios.get(localStorage.getItem('languages') ==="Aze"?(`http://localhost:3300/dataKart/${id}`):localStorage.getItem('languages')==="Ru"?(`http://localhost:3301/dataKart/${id}`):(`http://localhost:3302/dataKart/${id}`)).then((e)=>{
-
-
-         console.log(e.data)
-         setDataK2(e.data);
-       })
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    
-    fetchData();
-  },[])
 
    window.onscroll = function() {
     var scrolled = window.pageYOffset;

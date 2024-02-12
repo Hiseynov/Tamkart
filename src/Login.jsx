@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom"
 
 const Login = ()=>{
    const [yazilarFilter,setYazilarFilter]=useState([])
+   const [Login , setLogin] =useState([])
     const [username,usernameupdate]=useState('')
     const [password,passwordupdate]=useState('')
   const [UsernameDirty, setUsernameDirty] = useState(false);
@@ -12,7 +13,28 @@ const Login = ()=>{
   const [passworError, setPassworError] = useState(localStorage.getItem('languages')==='Ru'? "Пароль не может быть пустым":localStorage.getItem('languages')==='Aze'? "Parol boş ola bilməz":"Password cannot be empty");
   const [passwordDirty, setPasswordDirty] = useState(false);
  
+  useEffect(()=>{
 
+    const City = async () => {
+      try {
+       axios.get('http://localhost:3300/user/'+username).then((e)=>{
+       
+       setLogin(e.data)
+       })
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    
+    City();
+  },[])
+  console.log(Login,'df');
+  // if (Login.map((item)=>(item.id===username && item.password === password))) {
+  //   setPassworError("")
+  //   // setPassworError("")
+  // }else{
+  //   alert("iksinen biri serfdi")
+  // }
     const usenavigate = useNavigate()
     const ProceedLogin =(e)=>{
         e.preventDefault()
@@ -24,6 +46,7 @@ const Login = ()=>{
                 // console.log(resp);
                 if(Object.keys(resp).length===0){
                 // toast.error("Please Enter valid username")
+                alert("Вelə bir istifadəçi yoxdur")
                 }else{
                     if(resp.password===password){
                         // toast.success('Success')
@@ -33,6 +56,7 @@ const Login = ()=>{
                         location.reload()
                     }else{
                 // toast.error("Please Enter valid credentials")
+                alert("Şifrə yanlisdir ")
                     }
                 }
             }).catch((err)=>{
@@ -65,7 +89,8 @@ const Login = ()=>{
     const usernameHandler = (e) => {
         if (e.target.value <= 0) {
           setUsernameError(localStorage.getItem('languages')==='Ru'? "Username не может быть пустым":localStorage.getItem('languages')==='Aze'? "İstifadəçi adı boş ola bilməz":"Username cannot be empty");
-        } else {
+        }
+         else {
             setUsernameError("");
         }
       };
@@ -96,7 +121,7 @@ const Login = ()=>{
               <div className="registr-card-body">
                 <div className="form-container">
                   <div className="form-group">
-                      <label>User Name <span>*</span></label>
+                      <label>Login <span>*</span></label>
                       <input  onBlur={(e) => blurHandler(e)} name="username" value={username} onChange={e=>{usernameupdate(e.target.value),usernameHandler(e)}}   className={"form-control" + ( UsernameDirty && UsernameError ? " BorderActiveFalse" : " BorderActiveTrue") }></input>
                       {UsernameDirty && UsernameError && (
         <div style={{ color: "red"  }}>{UsernameError}</div>

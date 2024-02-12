@@ -50,7 +50,8 @@
     "Karthaqqında": "About the Card",
     "Erormesage":"Page not found",
     "Anasehife":"Return to home page",
-    "sebetekle":"Add to cart"
+    "sebetekle":"Add to cart",
+    "sebet":"BasketDark "
   },
   "filterCategori": [
     "All categories",
@@ -1023,6 +1024,8 @@
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "$0*"],
       "muddet": ["Duration", "up to 5 years"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "img": [
         "https://tamkart.az/assets/uploads/cards/54a7e01663abc4016425a2666734fa08.png",
         "https://tamkart.az/assets/uploads/cards/54a7e01663abc4016425a2666734fa08.png",
@@ -1061,6 +1064,8 @@
       "kreditLimit": ["Credit limit", "300 - 15,000 manats"],
       "faiz": ["Interest", "24%"],
       "qiymet": ["Price", "$0"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/e46a8d7535af84b05aeb6c59aeba5f87.png",
@@ -1120,6 +1125,8 @@
       "kreditLimit": ["Credit limit", "300 - 15,000 manats"],
       "faiz": ["Interest", "22%"],
       "qiymet": ["Price", "30 Azn"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/4d3ad9e84db6b9d6fe2676e22e4871b2.png",
@@ -1170,6 +1177,7 @@
         "SMS notification - Free",
         "Together for cash withdrawal (debit side) and inter-card transfers in all ATMs of the country - free of charge up to AZN 7,000 per month, 1% over AZN 7,000 (min. AZN 1 or equivalent)"
       ],
+      "Kartsifariş": "Order a card",
       "TariflərCedvel2": ["Tariff plan"]
     },
     {
@@ -1178,6 +1186,8 @@
       "kreditLimit": ["Credit limit", "300 - 15,000 manats"],
       "faiz": ["Interest", "22%"],
       "qiymet": ["Price", "30 Azn"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/a83fb16b19ac1e4461950332b396d107.png",
@@ -1228,6 +1238,7 @@
         "SMS notification - Free",
         "Together for cash withdrawal (debit side) and inter-card transfers in all ATMs of the country - free of charge up to AZN 7,000 per month, 1% over AZN 7,000 (min. AZN 1 or equivalent)"
       ],
+      "Kartsifariş": "Order a card",
       "TariflərCedvel2": ["Tariff plan"]
     },
     {
@@ -1236,6 +1247,8 @@
       "kreditLimit": ["Credit limit", "300 - 15,000 manats"],
       "faiz": ["Interest", "20%"],
       "qiymet": ["Price", "100 Azn"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/877726a8f766b3f6130513d9e4c4ddaf.png",
@@ -1283,6 +1296,7 @@
         "* Cashbak is not credited when paying utility bills, payments of mobile operators, tax / customs, state and insurance payments, payments to financial institutions, credit payments, CardTransfer, Unique cash, Quasi-cash payments. Maximum earnings per month on one card Purchase amount 300 AZN .",
         "** Interest on the balance is charged on a part of the funds on the card from a minimum of 200 AZN to a maximum of 2500 AZN and only for cards with AZN currency."
       ],
+      "Kartsifariş": "Order a card",
       "Tariflər2": [
         "Rates",
         "SMS notification - Free",
@@ -1296,6 +1310,8 @@
       "kreditLimit": ["Credit limit", "300 - 15,000 manats"],
       "faiz": ["Interest", "18%"],
       "qiymet": ["Price", "300 azn"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 3 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/97c0d62ced9b8bab991e48a1d2ba9988.png",
@@ -1344,6 +1360,7 @@
         "* Cashback is not credited when paying utility bills, mobile operator payments, tax/customs, state and insurance payments, payments to financial institutions, payments on loans, KartTransfer, Unique cash, Quasi cash. The maximum amount of cashback earned within a month on the same card is 300 manats.",
         "** Interest on the balance is charged on a part of the funds on the card from a minimum of 200 AZN to a maximum of 2500 AZN and only for cards with AZN currency."
       ],
+      "Kartsifariş": "Order a card",
       "Tariflər2": [
         "Rates",
         "SMS notification - Free",
@@ -1357,6 +1374,8 @@
       "kreditLimit": ["Credit limit", "300 - 15,000 manats"],
       "faiz": ["Interest", "18%"],
       "qiymet": ["Price", "300 azn"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 3 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/1f7f2087fc289c8abf376c723582a256.png",
@@ -1405,6 +1424,7 @@
         "* Cashback is not credited when paying utility bills, payments from mobile operators, tax/customs, state and insurance payments, payments to financial institutions, payments on loans, KartTransfer, Unique cash, Quasi cash. The maximum amount of cashback earned during the month by one and the same card is 300 manats.",
         "** Interest on the balance is charged on a part of the funds on the card from a minimum of 200 AZN to a maximum of 2500 AZN and only for cards with AZN currency."
       ],
+      "Kartsifariş": "Order a card",
       "Tariflər2": [
         "Rates",
         "SMS notification - Free",
@@ -1418,6 +1438,8 @@
       "kreditLimit": ["Cashback", "1%"],
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "50 Azn*"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/a83fb16b19ac1e4461950332b396d107.png",
@@ -1457,6 +1479,8 @@
       "kreditLimit": ["Cashback", "up to 5%"],
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "$0*"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/5c2c7ebe8c48a0199ecceb7b29fba5c1.png",
@@ -1496,6 +1520,8 @@
       "kreditLimit": ["Cashback", "1%"],
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "$0*"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/3e838084618da9360500dd91dc4ea884.png",
@@ -1536,6 +1562,8 @@
       "kreditLimit": ["Cashback", "1%"],
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "$0*"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/a266fa6127f33ea19c51225720f4cb9a.png",
@@ -1576,6 +1604,8 @@
       "kreditLimit": ["Cashback", "1%"],
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "50 Azn*"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/1bdab76bc9f2cb7d9f45dd6f016d8021.png",
@@ -1614,6 +1644,8 @@
       "kreditLimit": ["Cashback", "1.5%"],
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "100 azn*"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/e8647bd9682245d4813e1e6de4e4fd30.png",
@@ -1656,6 +1688,8 @@
       "kreditLimit": ["Cashback", "1.5%"],
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "100 azn*"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/995e59a72e9168146736db76bd87784e.png",
@@ -1698,6 +1732,8 @@
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "500 azn*"],
       "muddet": ["Duration", "up to 5 years"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "img": [
         "https://tamkart.az/assets/uploads/cards/60a1ac6924a575d68a053941ea1b0201.png",
         "https://tamkart.az/assets/uploads/cards/60a1ac6924a575d68a053941ea1b0201.png",
@@ -1738,6 +1774,8 @@
       "kreditLimit": ["Cashback", "1.5%"],
       "faiz": ["Currency", "AZN/US Dollar/Euro"],
       "qiymet": ["Price", "500 azn*"],
+      "Səbətəəlavəet":"Add to cart",
+      "Səbətəəlavəolundu":"Added to cart",
       "muddet": ["Duration", "up to 5 years"],
       "img": [
         "https://tamkart.az/assets/uploads/cards/9763c2dbc9859245e6d67a9d55ecc380.png",

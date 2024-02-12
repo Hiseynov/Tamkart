@@ -72,6 +72,7 @@ function Footer() {
               ))}
             </ul>
           </div>
+          
         </div>
         <div className="bottom-right">
           <ul>

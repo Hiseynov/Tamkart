@@ -10,6 +10,8 @@
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
       "qiymet": ["Цена", "0 долларов США*"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/54a7e01663abc4016425a2666734fa08.png",
         "https://tamkart.az/assets/uploads/cards/54a7e01663abc4016425a2666734fa08.png",
@@ -49,6 +51,8 @@
       "faiz": ["Интерес", "24%"],
       "qiymet": ["Цена", "0 долларов США"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/e46a8d7535af84b05aeb6c59aeba5f87.png",
         "https://tamkart.az/assets/uploads/cards/c7db97e0db40636d7e9fcc974ffce2cd.png",
@@ -111,6 +115,9 @@
       "faiz": ["Интерес", "22%"],
       "qiymet": ["Цена", "30 Азн"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
+      "Kartsifariş": "Заказать карту",
       "img": [
         "https://tamkart.az/assets/uploads/cards/4d3ad9e84db6b9d6fe2676e22e4871b2.png",
         "https://tamkart.az/assets/uploads/cards/4d3ad9e84db6b9d6fe2676e22e4871b2.png",
@@ -172,6 +179,9 @@
       "faiz": ["Интерес", "22%"],
       "qiymet": ["Цена", "30 Азн"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
+      "Kartsifariş": "Заказать карту",
       "img": [
         "https://tamkart.az/assets/uploads/cards/a83fb16b19ac1e4461950332b396d107.png",
         "https://tamkart.az/assets/uploads/cards/a83fb16b19ac1e4461950332b396d107.png",
@@ -230,9 +240,12 @@
       "id": 6,
       "name": "ТамКарт МС Платинум",
       "kreditLimit": ["Кредитный лимит", "300 - 15 000 манат"],
+      "Kartsifariş": "Заказать карту",
       "faiz": ["Интерес", "20%"],
       "qiymet": ["Цена", "100 Азн"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/877726a8f766b3f6130513d9e4c4ddaf.png",
         "https://tamkart.az/assets/uploads/cards/877726a8f766b3f6130513d9e4c4ddaf.png",
@@ -293,9 +306,12 @@
       "id": 7,
       "name": "ТамКарт VISA Премиум",
       "kreditLimit": ["Кредитный лимит", "300 - 15 000 манат"],
+      "Kartsifariş": "Заказать карту",
       "faiz": ["Интерес", "18%"],
       "qiymet": ["Цена", "300 азн"],
       "muddet": ["Продолжительность", "до 3 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/97c0d62ced9b8bab991e48a1d2ba9988.png",
         "https://tamkart.az/assets/uploads/cards/97c0d62ced9b8bab991e48a1d2ba9988.png",
@@ -357,9 +373,12 @@
       "id": 8,
       "name": "ТамКарт МС Премиум",
       "kreditLimit": ["Кредитный лимит", "300 - 15 000 манат"],
+      "Kartsifariş": "Заказать карту",
       "faiz": ["Интерес", "18%"],
       "qiymet": ["Цена", "300 азн"],
       "muddet": ["Продолжительность", "до 3 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/1f7f2087fc289c8abf376c723582a256.png",
         "https://tamkart.az/assets/uploads/cards/1f7f2087fc289c8abf376c723582a256.png",
@@ -424,6 +443,8 @@
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
       "qiymet": ["Цена", "50 Азн*"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/a83fb16b19ac1e4461950332b396d107.png",
         "https://tamkart.az/assets/uploads/cards/8793df6b28e6add66d615d6f083d030d.png",
@@ -463,6 +484,8 @@
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
       "qiymet": ["Цена", "0 долларов США*"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/5c2c7ebe8c48a0199ecceb7b29fba5c1.png",
         "https://tamkart.az/assets/uploads/cards/bf44a88820a018f1f281e71f8d09e771.png",
@@ -502,6 +525,8 @@
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
       "qiymet": ["Цена", "0 долларов США*"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/3e838084618da9360500dd91dc4ea884.png",
         "https://tamkart.az/assets/uploads/cards/3e838084618da9360500dd91dc4ea884.png",
@@ -542,6 +567,8 @@
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
       "qiymet": ["Цена", "0 долларов США*"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/a266fa6127f33ea19c51225720f4cb9a.png",
         "https://tamkart.az/assets/uploads/cards/3e838084618da9360500dd91dc4ea884.png",
@@ -582,6 +609,8 @@
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
       "qiymet": ["Цена", "50 Азн*"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/1bdab76bc9f2cb7d9f45dd6f016d8021.png",
         "https://tamkart.az/assets/uploads/cards/1bdab76bc9f2cb7d9f45dd6f016d8021.png",
@@ -620,6 +649,8 @@
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
       "qiymet": ["Цена", "100 азн*"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/e8647bd9682245d4813e1e6de4e4fd30.png",
         "https://tamkart.az/assets/uploads/cards/e8647bd9682245d4813e1e6de4e4fd30.png",
@@ -662,6 +693,8 @@
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
       "qiymet": ["Цена", "100 азн*"],
       "muddet": ["Продолжительность", "до 5 лет"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "img": [
         "https://tamkart.az/assets/uploads/cards/995e59a72e9168146736db76bd87784e.png",
         "https://tamkart.az/assets/uploads/cards/3e838084618da9360500dd91dc4ea884.png",
@@ -701,6 +734,8 @@
       "name": "TamKart VISA Премиум Дебет",
       "kreditLimit": ["Кашбак", "1,5%"],
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "qiymet": ["Цена", "500 азн*"],
       "muddet": ["Продолжительность", "до 5 лет"],
       "img": [
@@ -742,6 +777,8 @@
       "name": "Премиум дебет TamKart MC",
       "kreditLimit": ["Кашбак", "1,5%"],
       "faiz": ["Валюта", "АЗН/Доллар США/Евро"],
+      "Səbətəəlavəet":"Добавить в корзину",
+      "Səbətəəlavəolundu":"Добавлено в корзину",
       "qiymet": ["Цена", "500 азн*"],
       "muddet": ["Продолжительность", "до 5 лет"],
       "img": [
@@ -5034,7 +5071,8 @@
     "Karthaqqında": "О карте" ,
     "Erormesage":"Страница не найдена",
     "Anasehife":"Вернуться на главную страницу",
-    "sebetekle":"Добавит в корзину"
+    "sebetekle":"Добавит в корзину",
+    "sebet":"Корзина"
     
   }
 }

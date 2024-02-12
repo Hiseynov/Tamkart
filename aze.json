@@ -1,21 +1,23 @@
 {
   "user": [
     {
-      "id": "Said",
-      "name": "Said Balabekov",
+      "login": "Anar",
+      "id": "Anar",
+      "name": "Anar Huseynov",
       "password": "123",
       "email": "anarhus3ynov@mail.ru",
-      "phone": "+994506043905",
+      "phone": "+994506041905",
       "country": "",
       "address": "",
       "gender": "male",
       "karzina": []
     },
     {
-      "id": "Rauf21",
+      "login": "Anar1",
+      "id": "Anar1",
       "name": "Anar Huseynov",
       "password": "111",
-      "email": "rhbgkj@mail.ru",
+      "email": "anarhus3ynov@mail.ru",
       "phone": "+994506041905",
       "country": "",
       "address": "",
@@ -23,12 +25,13 @@
       "karzina": []
     },
     {
-      "id": "Neriman",
-      "name": "Nerimanov",
-      "password": "neriman1",
-      "email": "Neriman@mail.ru",
+      "login": "anar",
+      "id": "anar",
+      "name": "Anar Huseynov",
+      "password": "111",
+      "email": "zaur@mail.ru",
       "phone": "+994506041905",
-      "country": "USA",
+      "country": "",
       "address": "",
       "gender": "male",
       "karzina": []
@@ -214,6 +217,8 @@
         "https://tamkart.az/assets/uploads/cards/59bc38f0bd04ee94c0221583b2c6b36c.png"
       ],
       "Kartsifariş": "Kart sifariş et",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "Ətraflıməlumat": "Ətraflı məlumat",
       "Karthaqqında": [
         "Kart haqqında",
@@ -267,6 +272,8 @@
         "https://tamkart.az/assets/uploads/cards/4ebb1558318a21432558486eb29ef7d6.png"
       ],
       "Kartsifariş": "Kart sifariş et",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "Ətraflıməlumat": "Ətraflı məlumat",
       "Karthaqqında": [
         "Kart haqqında",
@@ -326,6 +333,8 @@
     {
       "id": 3,
       "name": "TamKart VISA Gold",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kredit limiti",
         "300 - 15 000 AZN"
@@ -399,6 +408,7 @@
         "SMS xəbərdarlıq - Pulsuz",
         "Ölkədaxili bütün ATM-lərdə nağdlaşdırma (debet tərəfi) və kartlararası köçürmələrə görə birlikdə – Aylıq 7 000 AZN-dək pulsuz, 7 000 AZN-dən yuxarı 1% (min. 1 AZN və ya ekv.)"
       ],
+      "Kartsifariş": "Kart sifariş et",
       "TariflərCedvel2": [
         "Tarif cədvəli"
       ]
@@ -406,6 +416,8 @@
     {
       "id": 4,
       "name": "TamKart MC Gold",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kredit limiti",
         "300 - 15 000 AZN"
@@ -479,6 +491,7 @@
         "SMS xəbərdarlıq - Pulsuz",
         "Ölkədaxili bütün ATM-lərdə nağdlaşdırma (debet tərəfi) və kartlararası köçürmələrə görə birlikdə – Aylıq 7 000 AZN-dək pulsuz, 7 000 AZN-dən yuxarı 1% (min. 1 AZN və ya ekv.)"
       ],
+      "Kartsifariş": "Kart sifariş et",
       "TariflərCedvel2": [
         "Tarif cədvəli"
       ]
@@ -486,6 +499,8 @@
     {
       "id": 6,
       "name": "TamKart MC Platinum",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kredit limiti",
         "300 - 15 000 AZN"
@@ -561,6 +576,7 @@
         "SMS xəbərdarlıq - Pulsuz",
         "Ölkədaxili bütün ATM-lərdə nağdlaşdırma (debet tərəfi) və kartlararası köçürmələrə görə birlikdə – Aylıq 7 000 AZN-dək pulsuz, 7 000 AZN-dən yuxarı 1% (min. 1 AZN və ya ekv.)"
       ],
+      "Kartsifariş": "Kart sifariş et",
       "TariflərCedvel2": [
         "Tarif cədvəli"
       ]
@@ -568,6 +584,8 @@
     {
       "id": 7,
       "name": "TamKart VISA Premium",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kredit limiti",
         "300 - 15 000 AZN"
@@ -644,6 +662,7 @@
         "SMS xəbərdarlıq - Pulsuz",
         "Ölkədaxili bütün ATM-lərdə nağdlaşdırma (debet tərəfi) və kartlararası köçürmələrə görə birlikdə – Aylıq 7 000 AZN-dək pulsuz, 7 000 AZN-dən yuxarı 1% (min. 1 AZN və ya ekv.)"
       ],
+      "Kartsifariş": "Kart sifariş et",
       "TariflərCedvel2": [
         "Tarif cədvəli"
       ]
@@ -651,6 +670,8 @@
     {
       "id": 8,
       "name": "TamKart MC Premium",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kredit limiti",
         "300 - 15 000 AZN"
@@ -727,6 +748,7 @@
         "SMS xəbərdarlıq - Pulsuz",
         "Ölkədaxili bütün ATM-lərdə nağdlaşdırma (debet tərəfi) və kartlararası köçürmələrə görə birlikdə – Aylıq 7 000 AZN-dək pulsuz, 7 000 AZN-dən yuxarı 1% (min. 1 AZN və ya ekv.)"
       ],
+      "Kartsifariş": "Kart sifariş et",
       "TariflərCedvel2": [
         "Tarif cədvəli"
       ]
@@ -734,6 +756,8 @@
     {
       "id": 13,
       "name": "TamKart VISA Classic Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "1%"
@@ -787,6 +811,8 @@
     {
       "id": 9,
       "name": "TamGənc Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "5%-dək"
@@ -840,6 +866,8 @@
     {
       "id": 10,
       "name": "TamKart VISA Classic Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "1%"
@@ -894,6 +922,8 @@
     {
       "id": 11,
       "name": "TamKart MC Standard Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "1%"
@@ -948,6 +978,8 @@
     {
       "id": 12,
       "name": "TamKart VISA Gold Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "1%"
@@ -1000,6 +1032,8 @@
     {
       "id": 14,
       "name": "TamKart VISA Platinum Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "1.5%"
@@ -1056,6 +1090,8 @@
     {
       "id": 15,
       "name": "TamKart MC Platinum Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "1.5%"
@@ -1111,6 +1147,8 @@
     {
       "id": 16,
       "name": "TamKart VISA Premium Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "1.5%"
@@ -1166,6 +1204,8 @@
     {
       "id": 5,
       "name": "TamKart MC Premium Debet",
+      "Səbətəəlavəet": "Səbətə əlavə et",
+      "Səbətəəlavəolundu": "Səbətə əlavə olundu",
       "kreditLimit": [
         "Kəşbək",
         "1.5%"
@@ -7512,7 +7552,8 @@
     "Karthaqqında": "Kart haqqında",
     "Erormesage": "Səhifə tapılmadı",
     "Anasehife": "Ana səhifəyə qayıt",
-    "sebetekle": "Səbətə əlavə et"
+    "sebetekle": "Səbətə əlavə et",
+    "sebet": "Səbət"
   },
   "elagecategory": [
     {

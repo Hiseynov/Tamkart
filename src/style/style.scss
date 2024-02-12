@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
 }
 .all-maim {
   width: 100%;
@@ -26,7 +28,7 @@
   padding: 10px 35px;
   z-index: 100;
   box-sizing: border-box;
-  top: 50px;
+  top: 0px;
   a {
     color: white;
   }
@@ -68,6 +70,7 @@
   }
   .nav-right {
     display: flex;
+    align-items: center;
     gap: 40px;
     a {
       align-items: center;
@@ -93,13 +96,16 @@
       position: relative;
       cursor: pointer;
       strong {
+        display: flex;
+        width: 100%;
+        justify-content: center;
         img {
           font-size: 20px;
         }
       }
       .kabinet-gizli {
         position: absolute;
-        top: 43px;
+        top: 39px;
         background: #4d5858;
         width: 100%;
         height: 42px;
@@ -108,41 +114,48 @@
         justify-content: center;
         align-items: center;
         border-radius: 0px 0px 20px 20px;
+        z-index: 99999;
       }
     }
   }
 }
-.navt {
-  position: fixed;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(45deg, #76bc21, #8cc745);
-  padding: 10px 35px;
-  z-index: 101;
-  box-sizing: border-box;
-  top: 0px;
-  justify-content: space-around;
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #4d5858;
-    bottom: -1px;
-  }
+// .navt {
+//   position: fixed;
+//   width: 90%;
+//   display: flex;
+//   align-items: center;
+//   background: linear-gradient(45deg, #76bc21, #8cc745);
+//   padding: 10px 35px;
+//   z-index: 101;
+//   box-sizing: border-box;
+//   top: 0px;
+//   justify-content: space-around;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 1px;
+//     background-color: #4d5858;
+//     bottom: -1px;
+//   }
+
+// }
   .DarkLight-container {
     position: relative;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    // background: red;
+    // cursor: pointer;
     .fa-solid {
+      // left: 9px;
       position: absolute;
-      top: 6px;
+      top: 10px;
+      font-size: 19px;
       color: white;
+      cursor: pointer;
     }
   }
+
 
   .languageDark {
     box-shadow: inset 0px 1px 25px 2px #31572c;
@@ -151,7 +164,7 @@
     gap: 10px;
     padding: 5px 10px;
     background: white;
-    width: 215px;
+    width: 70px;
     cursor: pointer;
 
     i {
@@ -165,7 +178,7 @@
     }
     ul {
       // box-shadow: inset 0px 1px 25px 2px #31572c;
-      width: 215px;
+      width: 70px;
       position: absolute;
       left: 0;
       top: 19px;
@@ -183,6 +196,8 @@
         color: rgb(0, 0, 0);
         padding: 5px 10px;
         span {
+          text-align: center;
+          width: 100%;
           img {
             width: 20px;
           }
@@ -197,7 +212,7 @@
     gap: 10px;
     padding: 5px 10px;
     background: white;
-    width: 215px;
+    width: 70px;
     cursor: pointer;
 
     i {
@@ -211,11 +226,11 @@
     }
     ul {
       // box-shadow: inset 0px 1px 25px 2px #31572c;
-      width: 215px;
+      width: 70px;
       position: absolute;
       left: 0;
       top: 19px;
-      z-index: 2;
+      z-index: 10000;
       margin-top: 10px;
       background-color: white;
       display: flex;
@@ -228,7 +243,9 @@
         gap: 10px;
         color: rgb(0, 0, 0);
         padding: 5px 10px;
+        text-align: center;
         span {
+          width: 100%;
           img {
             width: 20px;
           }
@@ -236,8 +253,6 @@
       }
     }
   }
-}
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -770,8 +785,30 @@
           gap: 20px;
           align-items: center;
           a {
-            span {
+            .ƏtraflıLight{
               position: relative;
+              font-size: 18px;
+              color: #000;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1.5px;
+                background-color: rgb(0, 0, 0);
+                transform-origin: left;
+                transform: scaleX(0);
+                transition: 0.6s;
+                left: 0;
+                bottom: -2px;
+              }
+              &:hover {
+                &::after {
+                  transform: scaleX(1);
+                }
+              }
+            }
+            .ƏtraflıDark{
+               position: relative;
               color: #000;
               font-size: 18px;
               &::after {
@@ -786,10 +823,11 @@
                 content: "";
                 -webkit-transition: all 0.2s ease-out;
                 transition: all 0.2s ease-out;
-              }
+            }
+         
             }
             &:hover {
-              span {
+              .ƏtraflıDark {
                 &::after {
                   position: absolute;
                   width: 100%;
@@ -1084,7 +1122,7 @@
         position: absolute;
         cursor: pointer;
         user-select: none;
-        z-index: 1000002;
+        z-index: 100000;
         outline-offset: 3px;
         right: 0px;
         bottom: 0px;
@@ -1101,7 +1139,7 @@
   padding: 30px 0;
   padding-bottom: 22px;
   position: sticky;
-  top: 127px;
+  top: 70px;
   z-index: 5;
   &::after {
     content: "";
@@ -1215,6 +1253,7 @@
   .popop-container {
     position: fixed;
     left: 14%;
+    height: 90%;
     width: 73%;
     top: 40px;
     z-index: 120;
@@ -1237,7 +1276,10 @@
     }
   }
   .popop-top {
-    padding: 20px;
+    padding: 20px 40px;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
     .popop-top-ox {
       display: flex;
       justify-content: end;
@@ -1708,24 +1750,25 @@
   }
 }
 .BorderActiveFalse {
-  border: 1px solid red;
+  border: 1.5px solid red;
 }
 .BorderActiveTrue {
-  border: 1px solid green;
+  border: 1.5px solid green;
 }
 .ckeckbox {
   background-color: white;
-  width: 80px;
+  // width: 80px;
   height: 30px;
   border-radius: 30px;
   position: relative;
   .yumuru {
     box-shadow: inset 0px -2px 12px 0px #9c8888;
     position: absolute;
-    width: 30px;
-    height: 25px;
-    border-radius: 50%;
-    top: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0px;
+    left: 0px;
   }
 }
 #LoginRegistr {
@@ -1793,7 +1836,11 @@
                   }
                 }
                 .form-control {
-                  max-width: 350px;
+                  // border: 1px solid;
+                  min-width: 250px;
+                  max-width: 250px;
+                  min-height: 50px;
+                  max-height: 50px;
                 }
               }
             }
@@ -2233,7 +2280,7 @@
   z-index: 9999;
   width: 100%;
   height: 100%;
-  top: 127px;
+  top: 85px;
   .eror-container {
     display: flex;
     flex-direction: column;
@@ -2266,41 +2313,96 @@
   }
 }
 .iconbasket {
-  i {
+  position: relative;
+ 
+  i { 
+    color: white;
     cursor: pointer;
+    font-size: 20px;
+  }
+  sup{
+    color: white;
+    background: red;
+    border-radius: 50%;
+    width: 22px;
+    position: absolute;
+    top: -17px;
+    padding: 2px;
+    font-size: 14px;
+    right: -20px;
+    text-align: center;
   }
 }
-  .basket-container {
-      position: fixed;
-      z-index: 9999;
-      background-color: #2ab811;
-      height: 400px;
-      overflow-y: scroll;
-      transform-origin: right;
-      right: 63px;
-      top: 50px;
-      width: 90%;
-      margin: 0px auto;
-      transition: 0.8s;
-      .basket-item {
-        display: flex;
-        gap: 100px;
-        padding: 20px 100px;
+.basketDark {
+  background-color: #0e4f0e;
+  .basket-word{
+    color: white;
+  }
+}
+.basketLight{
+  background-color: #2ab811;
+}
+.basket-container {
+  position: fixed;
+  z-index: 9999;
+  
+  height: 90%;
+  overflow-y: scroll;
+  transform-origin: right;
+  right: 63px;
+  top: 75px;
+  width: 90%;
+  margin: 0px auto;
+  transition: 0.8s;
+  h3{
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .basket-menu{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    .basket-item {
+      display: flex;
+    gap: 50px;
+    align-items: center;
+    .basket-photo {
+      width: 250px;
+      img {
         width: 100%;
-        .basket-photo {
-          width: 250px;
-          img {
-            width: 100%;
-          }
-        }
-        .basket-word {
-          display: flex;
-          flex-direction: column;
-          row-gap: 10px;
-          p,
-          strong {
-            font-size: 30px;
-          }
-        }
       }
     }
+    .basket-word {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      p,
+      strong {
+        font-size: 25px;
+      }
+    }
+  }
+  .basket-delete{
+    display: flex;
+    justify-content: center;
+    i{
+      font-size: 25px;
+      color: red;
+    }
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+  }
+  }
+  
+}

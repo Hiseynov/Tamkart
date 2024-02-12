@@ -1,11 +1,16 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { setItemInCard } from "../redux/cart/reducer";
+import { useDispatch, useSelector } from "react-redux";
+import {  setItemInCard } from "../redux/cart/reducer";
+// import { Item } from "semantic-ui-react";
 
-function Kartlar(game) {
-  
+function Kartlar() {
+  // const с = useSelector(state => state.initialState);
+  const cart = useSelector((state) => state.cart).itemsInCard
+  const [Add,setAdd] = useState(false)
+// console.log(cart,'jj');
+  // cart.find((i)=>i.id === item.id)?setAdd(true):setAdd(false)
   const [active, setactive] = useState(
     localStorage.getItem("languages") === "Aze"
       ? "Hamisi"
@@ -69,6 +74,7 @@ function Kartlar(game) {
 
     fetchData();
   }, []);
+
   return (
     <>
       
@@ -186,6 +192,7 @@ function Kartlar(game) {
         <div className="main-kartlar-container">
           {data.map((item, ind) => (
             <div key={ind} className="kart-item">
+              
               <Link to={`${item.id}`} className="kart-item-img">
                 <img src={item.img[0]} alt="" />
               </Link>
@@ -228,32 +235,60 @@ function Kartlar(game) {
                   </ul>
                 </Link>
                 <div className="item-navigate">
-                  {item.Kartsifariş ? (
-                    <Link
-                      className={
-                        localStorage.getItem("darkLightMod") === "light"
-                          ? "navigate-link"
-                          : "dark-navigate-link"
-                      }
-                      z
-                      
-                      to={
-                        localStorage.getItem("user")
-                          ? `${item.id}`
-                          : "/Login-Registr"
-                      }
-                    >
-                      {item.Kartsifariş}
-                    </Link>
-                  ) : (
-                    ""
-                  )}
-                  <button onClick={()=>dispatch(setItemInCard(item))}>
-                    {
-                      yazilarFilter.sebetekle
-                    }
-                  </button>
-
+                  {
+                     item.Səbətəəlavəet && (
+                      <>
+                    
+                         {
+                          
+                          localStorage.getItem("user")?(
+                           <>
+                           
+                           <button   style={cart.find((i)=>i.id === item.id) ?{cursor: "no-drop",background:"red"}:{cursor:'pointer'}}
+                            onClick={()=>localStorage.getItem("user")?dispatch(setItemInCard(item)):""}
+                              className={
+                                localStorage.getItem("darkLightMod") === "light"
+                                  ? "navigate-link"
+                                  : "dark-navigate-link"
+                              }
+                            >
+                              {cart.find((i)=>i.id === item.id) ?item.Səbətəəlavəolundu:item.Səbətəəlavəet}
+                            </button>
+                            {/* <button  className={
+                                localStorage.getItem("darkLightMod") === "light"
+                                  ? "navigate-link"
+                                  : "dark-navigate-link"
+                              }  style={cart.find((i)=>i.id === item.id) ?{cursor:'pointer'}:{cursor: "no-drop",background:"red"}} onClick={()=> dispatch(deletItemFromCart(item.id))}>
+                            Sebetten cixar
+                            </button> */}
+                           
+                           </>
+                          ):(
+                            <Link
+                            
+                              className={
+                                localStorage.getItem("darkLightMod") === "light"
+                                  ? "navigate-link"
+                                  : "dark-navigate-link"
+                              }
+                              
+                              
+                              to={
+                                localStorage.getItem("user")
+                                  ? ''
+                                  : "/Login-Registr"
+                              }
+                              
+                            >
+                              {cart.find((i)=>i.id === item.id) ?item.Səbətəəlavəolundu:item.Səbətəəlavəet}
+                            </Link>
+                          )
+                         }
+                         
+                      </>
+                     )
+                  }
+                 
                   <Link to={`${item.id}`}>
                     <span
                       style={
@@ -261,6 +296,7 @@ function Kartlar(game) {
                           ? { color: "black" }
                           : { color: "white" }
                       }
+                      className={localStorage.getItem("darkLightMod") === "light"?"ƏtraflıLight":"ƏtraflıDark"}
                     >
                       {item.Ətraflıməlumat}
                     </span>

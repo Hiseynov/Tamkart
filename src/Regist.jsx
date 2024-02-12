@@ -2,9 +2,11 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+// import { Item } from "semantic-ui-react";
 // import { toast } from "react-toastify";
 function Regist() {
-  const [id, idchange] = useState("");
+  const [login, idchange] = useState("");
+  const [id ,setId] =useState("")
   const [name, namechange] = useState("");
   const [password, passwordchange] = useState("");
   const [email, emailchange] = useState("");
@@ -25,6 +27,7 @@ function Regist() {
   const [formValid, setFormValid] = useState(false);
   const [karzina,setkarzina]= useState([])
   const [yazilarFilter,setYazilarFilter]=useState([])
+  const [LoginData,setLoginData] = useState([])
 
   useEffect(() => {
     if (
@@ -39,6 +42,24 @@ function Regist() {
       setFormValid(true);
     }
   }, [UsernameError, passworError, FulnameError, PhoneError, emailError]);
+
+  useEffect(()=>{
+
+    const Login = async () => {
+      try {
+       axios.get(`http://localhost:3300/user`).then((e)=>{
+       
+       setLoginData(e.data)
+       })
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    
+    Login();
+    console.log(LoginData,'d');
+  },[])
+
   const blurHandler = (e) => {
     switch (e.target.name) {
       case "email":
@@ -70,10 +91,16 @@ function Regist() {
   const usernameHandler = (e) => {
     if (e.target.value <= 0) {
       setUsernameError(localStorage.getItem('languages')==='Ru'? "Имя пользователя не может быть пустым":localStorage.getItem('languages')==='Aze'? "İstifadəçi adı boş ola bilməz":"Username cannot be empty");
-    } else {
+    } else if (LoginData.find((i)=>i.login === e.target.value))  {
+      setUsernameError(localStorage.getItem('languages')==='Ru'?"Этот логин уже используется":localStorage.getItem('languages')==='Aze'?"Bu giriş artıq istifadə olunur":"This login is already in use")
+    }
+     else {
+      // setId(login)
         setUsernameError("");
     }
+  
   };
+ 
   const passwordHandler = (e) => {
    
      if(e.target.value.length < 3 || e.target.value.length > 8){
@@ -114,7 +141,9 @@ function Regist() {
   const handlesubmit = (e) => {
     e.preventDefault();
     if (formValid) {
-      let regobj = {
+      let Login = {
+        
+        login,
         id,
         name,
         password,
@@ -125,20 +154,29 @@ function Regist() {
         gender,
         karzina,
       };
-      fetch("http://localhost:3300/user", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(regobj),
+      // fetch("http://localhost:3300/user", {
+      //   method: "POST",
+      //   headers: { "content-type": "application/json" },
+      //   body: JSON.stringify(Login),
+      // })
+      //   .then((res) => {
+      //     localStorage.setItem('login',true),location.reload()
+      //   })
+      //   .catch((err) => {});
+      axios.post("http://localhost:3300/user", Login)
+      .then(function (response) {
+        localStorage.setItem('login',true),location.reload()
       })
-        .then((res) => {
-          localStorage.setItem('login',true),location.reload()
-        })
-        .catch((err) => {});
+      .catch(function (error) {
+        console.log(error);
+      });
     }
   };
   return (
    <>
       <form onSubmit={handlesubmit} className="from-container">
+        {/* {console.log(LoginData,'ss')} */}
+        
             <div className="registr-card">
             <h1>{localStorage.getItem('login')==="false" &&( yazilarFilter.Qeydiyyat)}</h1>
 
@@ -146,14 +184,16 @@ function Regist() {
                 <div className="form-container">
                   <div className="form-group">
                     <label>
-                      User Name <span>*</span>
+                      Login <span>*</span>
                     </label>
                     <input
                       onBlur={(e) => blurHandler(e)}
                       name="Username"
-                      value={id}
-                      onChange={(e) => {
-                        idchange(e.target.value), usernameHandler(e);
+                      value={login}
+                      onChange={(e) => { 
+                        idchange(e.target.value),
+                        usernameHandler(e);
+                        setId(e.target.value)
                       }}
                       type="text"
                       className={
@@ -267,7 +307,7 @@ function Regist() {
                     <select
                       value={country}
                       onChange={(e) => countrychange(e.target.value)}
-                      className="form-control"
+                      className="form-control BorderActiveTrue"
                     >
                       <option value="Aze">Aze</option>
                       <option value="USA">Rus</option>
@@ -279,7 +319,7 @@ function Regist() {
                     <textarea
                       value={address}
                       onChange={(e) => addresschange(e.target.value)}
-                      className="form-control"
+                      className="form-control BorderActiveTrue"
                     ></textarea>
                   </div>
                   <div className="form-group-gender">
