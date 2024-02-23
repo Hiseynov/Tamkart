@@ -2,10 +2,12 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { deletItemFromCart } from '../redux/cart/reducer'
+import { Link, useNavigate } from 'react-router-dom'
+import { BuyElement, deletItemFromCart } from '../redux/cart/reducer'
 
 
 function Basket() {
+  const usenavigate = useNavigate()
     // const cart = useSelector((state) => state.reducer).cart
     const items = useSelector(state => state.cart.itemsInCard)
     const [yazilarFilter, setYazilarFilter] = useState([]);
@@ -31,6 +33,11 @@ function Basket() {
   
       filterYazilar();
     }, []);
+    // const BuyEl =(e)=>{
+    //   localStorage.setItem('BuyElement', JSON.stringify(e))
+    //   // location.reload()
+    //   usenavigate("/Buy")
+    // }
   return (
     <>
     <div id="basketmenu">
@@ -50,7 +57,7 @@ function Basket() {
                   // </p>
                   <>
                   <div key={id} className="basket-menu">
-                         <div  className="basket-item" >
+                      <div  className="basket-item" >
                       <div className="basket-photo">
                         <img src={i.img[0]} alt="" />
                       </div>
@@ -58,14 +65,24 @@ function Basket() {
                         <p>{i.name}</p>
                         <strong>{i.qiymet[1]}</strong>
                       </div>
-            
                       
                      </div>
+                    
                      <div onClick={()=> dispatch(deletItemFromCart(i.id))} className="basket-delete">
                       <span >
                       <i class="fa-solid fa-trash-can"></i>
                       </span>
                      </div>
+                     <div className="basket-buy">
+                      {/* <p onClick={()=>(BuyEl(i))} ></p> */}
+                      {/* <button > */}
+                        
+                      <Link className='buyButton' onClick={()=>(dispatch(BuyElement(i)),setOpenBasket(!openBasket))} to={"/Buy"}>
+                            <img src="https://cdn3.iconfinder.com/data/icons/essential-vol-2/52/35-512.png" alt="buy img" />
+                            <button>{yazilarFilter.almag}</button>
+                      </Link>
+                      {/* </button> */}
+                      </div>
                   </div>
                 
                   </>
@@ -75,7 +92,7 @@ function Basket() {
             }
           </div>
       </div>
-    </div>,
+    </div>
       
     </>
   )

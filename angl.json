@@ -51,7 +51,20 @@
     "Erormesage":"Page not found",
     "Anasehife":"Return to home page",
     "sebetekle":"Add to cart",
-    "sebet":"BasketDark "
+    "sebet":"BasketDark ",
+    "almag":"One click",
+    "almago":"buy for",
+    "odenisUsulu":"Payment by card",
+    "secilmis":"Selected card",
+    "cartOdenis":"Enter your card details: card number, expiration date and security code.",
+    "cartaOde":"Pay to this card",
+    "KartAdi":"Product Name",
+     "KartSekil":"Product",
+     "KartQiymet":"Product price",
+     "Odeniskart": "Which card was paid from",
+     "odenilenkart": "Which card was paid for",
+     "vaht": "Cup time",
+     "sucses": "Purchase completed successfully"
   },
   "filterCategori": [
     "All categories",

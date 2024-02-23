@@ -55,7 +55,7 @@ function PopopPartnyor({ setPopop, def }) {
           </div>
           <div className="Popop-partnorlar-container-right">
           <div style={{ height: "100%" }}>
-          <GoogleMapReact 
+          {/* <GoogleMapReact 
             bootstrapURLKeys={{ key: "" }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
@@ -65,7 +65,9 @@ function PopopPartnyor({ setPopop, def }) {
               lng={30.337844}
               text="My Marker"
             />
-            <div className='MapLocation' style={{position:"absolute"}}>
+ 
+          </GoogleMapReact> */}
+          <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/w_1920,c_limit/GoogleMapTA.jpg" alt="" />           <div className='MapLocation' style={{position:"absolute"}}>
               <ul>
                 <li>{def.name}</li>
                 <li className='Maplocation'>{def.location}</li>
@@ -74,7 +76,6 @@ function PopopPartnyor({ setPopop, def }) {
             <div className='MapIcon' style={{position:'absolute'}}>
               <img src={def.iconLogo} alt="" />
             </div>
-          </GoogleMapReact>
         </div>
           </div>
         </div>

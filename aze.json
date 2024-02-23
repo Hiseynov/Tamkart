@@ -7553,7 +7553,21 @@
     "Erormesage": "Səhifə tapılmadı",
     "Anasehife": "Ana səhifəyə qayıt",
     "sebetekle": "Səbətə əlavə et",
-    "sebet": "Səbət"
+    "sebet": "Səbət",
+    "almag":"Bir Kliklə",
+    "almago":"almag",
+    "odenisUsulu":"Kartla ödəniş",
+    "secilmis":"Seçilmiş kart",
+    "cartOdenis":"Kart məlumatlarınızı daxil edin: kartın nömrəsi, istifadə müddəti və təhlükəsizlik kodu.",
+    "cartaOde":"Bu karta ödəyin",
+    "KartAdi":"Məhsulun adi",
+     "KartSekil":"Məhsul",
+     "KartQiymet":"Məhsulun qiyməti",
+     "Odeniskart": "Hansı kartdan ödənilib",
+     "odenilenkart": "Hansı karta ödənilib",
+     "vaht": "Alindigi vaxtı",
+     "sucses":"Satınalma uğurla tamamlandı"
+
   },
   "elagecategory": [
     {

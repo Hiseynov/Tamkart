@@ -13,14 +13,6 @@ function CardsId() {
   const [yazilarFilter, setYazilarFilter] = useState([]);
   const navigate = useNavigate();
   console.log(id);
-  // function errors() {
-  //   if(+id >= 16 || typeof(+id) != Number ){
-  //     navigate("/*")
-  //   }else{
-  //     navigate('/Cards/:id')
-  //   }
-  // }
-  // errors()
   useEffect(() => {
     const filterYazilar = async () => {
       try {

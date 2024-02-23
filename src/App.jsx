@@ -32,7 +32,7 @@ const [chatAc,setChatAc] = useState(false)
   const steps = [
     {
       id: '1',
-      message: 'Хoş gəldiniz zehmet olmasa Adinizi dahil edin ',
+      message: 'Xoş gəldiniz, adınızı qeyd edin',
       trigger:'2',
     },
     {
@@ -42,7 +42,7 @@ const [chatAc,setChatAc] = useState(false)
     },
     {
       id:"3",
-      message:`Salam {previousValue} (bey / xanim ), sizin probleminiz neyney elagederdir ?`,
+      message:`Salam {previousValue} (Cənab/Xanım), probleminiz nədir?`,
      trigger:'4'
     },
     {
@@ -56,7 +56,7 @@ const [chatAc,setChatAc] = useState(false)
     },
     {
       id:'5',
-      message:'Kartla Tam olarag probleminiz nedir ?',
+      message:'Sizin kartla bağlı probleminiz nədir??',
       trigger:'8'
 
     },
@@ -71,24 +71,24 @@ const [chatAc,setChatAc] = useState(false)
     },
     {
       id:'9',
-      message:'Karti elde etmekicin once onlayn sekilde geydiyatan kecin 2-3 gune filialdan karti goturun yada onceden filiala gelib geydiyattan kece bilersiz',
+      message:'Kartı almamışdan əvvəl 2-3 gün onlayn alış-veriş edin, kartı filialdan gətirin və ya əvvəlcədən filiala gəlib alış-veriş edə bilərsiniz.',
       end:true
 
     },
     {
       id:'10',
-      message:'Karti yenilemekicin once filialimiza gelin niye yenilemek istisis sebebin deyin sonra kartinizi yenilicekler',
+      message:'Kartınızı yeniləməzdən əvvəl filialımıza gəlin və istisnanın səbəbini bizə bildirin, o zaman kartınız uzadılacaq.',
       end:true
 
     },
     {
       id:'11',
-      message:'Zehmet olmasa aperatirimizla elage saxlayin +994 (51) - 604 - 19 - 05',
+      message:'Operatorumuzla əlaqə saxlayın +994 (51) - 604 - 19 - 05.',
       end:true
     },
     {
       id:'6',
-      message:'Partnorlar Tam olarag probleminiz nedir ?',
+      message:'Партнеры В чем именно заключается ваша проблема?',
       trigger:'12'
 
     },

@@ -3,7 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 const cartSlice = createSlice({
     name:'cart',
     initialState:{
-        itemsInCard:localStorage.getItem('cart')?JSON.parse(localStorage.getItem('cart')):[]
+        itemsInCard:localStorage.getItem('cart')?JSON.parse(localStorage.getItem('cart')):[],
+        BuyEl:localStorage.getItem('BuyElement')?JSON.parse(localStorage.getItem('BuyElement')):"",
+        BuyOpen:localStorage.getItem('OpenPop')?JSON.parse(localStorage.getItem('OpenPop')):"",
+
     },
     reducers:{
         setItemInCard:(state,action) =>{
@@ -20,6 +23,14 @@ const cartSlice = createSlice({
             const id = action.payload
             state.itemsInCard = [...state.itemsInCard.filter(x=> x.id != id)]
             localStorage.setItem('cart', JSON.stringify(state.itemsInCard) )
+        },
+        BuyElement:(state,action)=>{
+            state.BuyEl = action.payload
+            localStorage.setItem('BuyElement', JSON.stringify(action.payload))
+        },
+        PopopBuy:(state,action)=>{
+            state.BuyOpen = action.payload
+            localStorage.setItem('OpenPop', JSON.stringify(action.payload))
         }
     }
 })
@@ -28,7 +39,7 @@ const cartSlice = createSlice({
 
 
 // export const { cart } = cartSlice;
-export const { setItemInCard, deletItemFromCart } = cartSlice.actions;
+export const { setItemInCard, deletItemFromCart,BuyElement,PopopBuy } = cartSlice.actions;
 export default cartSlice.reducer
 
 

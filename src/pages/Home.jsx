@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination } from 'swiper/modules';
 import { Link } from "react-router-dom";
 import axios from "axios";
 import GoogleMapReact from "google-map-react";
@@ -48,7 +48,7 @@ function Home() {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 4500,
+            delay: 1500,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -141,7 +141,7 @@ function Home() {
           <div className="Home-container-bottom">
             <div className="Home-container-bottom-left">
             <div style={{ margin:"0 auto", height: "100%", width: "100%" }}>
-          <GoogleMapReact 
+          {/* <GoogleMapReact 
             bootstrapURLKeys={{ key: "" }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
@@ -154,7 +154,8 @@ function Home() {
             />
           
          
-          </GoogleMapReact>
+          </GoogleMapReact> */}
+          <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/w_1920,c_limit/GoogleMapTA.jpg" alt="" />
         </div>
             </div>
             <div className="Home-container-bottom-right">

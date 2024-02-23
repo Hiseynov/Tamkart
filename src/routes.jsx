@@ -8,6 +8,7 @@ import CardsId from "./pages/CardsId";
 import LoginRegisrt from "./pages/LoginRegisrt";
 import TaksitImkani from "./pages/TaksitImkani";
 import Eror from "./pages/Eror";
+import Buy from "./pages/Buy";
 
 export const routes = [
   {
@@ -41,6 +42,10 @@ export const routes = [
   {
     path: "Login-Registr",
     element: <LoginRegisrt></LoginRegisrt>,
+  },
+  {
+    path:"Buy",
+    element:<Buy></Buy>
   },
   // Ru
   {
